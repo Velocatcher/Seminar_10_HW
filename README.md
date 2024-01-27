@@ -1,6 +1,8 @@
 # Seminar_10_HW
 <!-- Мало что понял, но надеюсь что сделал правильно ) -->
-import pandas as pd
+
+
+#import pandas as pd
 import random
 lst = ['robot'] * 10
 lst += ['human'] * 10
@@ -14,4 +16,4 @@ data.set_index([data.index, 'whoAmI'], inplace=True)
 data = data.unstack(level=-1, fill_value = 0).astype(int)
 data.columns = data.columns.droplevel()
 data.columns.name = None
-print(data)
+print(data)#
